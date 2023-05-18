@@ -21,8 +21,7 @@ const {
 } = require('./8-kyu');
 
 /**
- * Función que añade la palabra ' kata' al final de la la frase
- * que se le pase como argumento
+ * Función que siempre devuelve "Hello World"
  */
 it("getHelloWorld", () => {
   expect(getHelloWorld()).toEqual("Hello World");
@@ -200,7 +199,7 @@ it("reverse", () => {
 it("isAllUpperCase", () => {
   expect(isAllUpperCase('hola')).toBeFalsy();
   expect(isAllUpperCase('HOLA')).toBeTruthy();
-  expect(isAllUpperCase('')).toBeTruthy();
+  expect(isAllUpperCase('')).toBeFalsy();
   expect(isAllUpperCase()).toBeFalsy();
   expect(isAllUpperCase(null)).toBeFalsy();
   expect(isAllUpperCase(345)).toBeFalsy();
